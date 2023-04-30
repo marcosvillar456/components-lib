@@ -1,0 +1,13 @@
+## Purpose
+
+<!-- Por qué es necesario este PR, que soluciona, mejora o que nuevo feature a nivel de negocio implementa -->
+
+#### Reference links: [Storybook](http://localhost:6006/?path=/story/default)
+
+## Brief description
+
+<!-- Explicar brevemente como es el flujo para realizar lo que necesita -->
+
+## Evidence
+
+- [ ] Attached screenshoots
