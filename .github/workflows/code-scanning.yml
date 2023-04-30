@@ -26,9 +26,7 @@ jobs:
         run: yarn test:coverage
 
       - name: Check code coverage
-        run: |
-          yarn test --coverage
-          npx check-coverage --statements 80 --branches 70 --functions 80 --lines 80 coverage/lcov.info
+        run:  npx check-coverage --statements 80 --branches 70 --functions 80 --lines 80 coverage/lcov.info
 
   style:
     name: Style
