@@ -1,0 +1,32 @@
+.pill {
+  font-family: "Proxima Nova", -apple-system, "Roboto", Arial, sans-serif;
+  width: fit-content;
+  line-height: 4px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 7px 8px 5px;
+  background-color: var(--background-pill);
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    padding: 7px 12px 5px 8px;
+  }
+
+  &__image {
+    padding: 0 7px 0 7px;
+
+    &--separator {
+      margin: 0 7px 0 0;
+      border-right: 1px solid;
+    }
+  }
+
+  &__text {
+    color: var(--text-color-pill);
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+  }
+}

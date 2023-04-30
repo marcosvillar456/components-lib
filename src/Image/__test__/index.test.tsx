@@ -1,9 +1,16 @@
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 import Image from '..';
 
 describe('Image component', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+    jest.resetAllMocks();
+    jest.restoreAllMocks();
+    cleanup();
+  });
+
   const props = {
     src: 'https://example.com/image.jpg',
     alt: 'Test image',
