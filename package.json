@@ -21,6 +21,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint 'src/**/*.tsx' --quiet",
+    "lint:fix": "eslint 'src/**/*.ts?(x)' --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

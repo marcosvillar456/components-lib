@@ -23,7 +23,7 @@ jobs:
         run: yarn test
 
       - name: Collect coverage
-        run: yarn coverage
+        run: yarn test:coverage
 
       - name: Check code coverage
         run: npx check-coverage --statements 80 --branches 70 --functions 80 --lines 80 coverage/lcov.info
@@ -43,3 +43,6 @@ jobs:
 
       - name: Run ESLint
         run: yarn lint
+
+      - name: Run lint:fix
+        run: yarn lint:fix
