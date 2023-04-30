@@ -11,6 +11,7 @@
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "classnames": "2.3.2",
+    "eslint": "^8.39.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
@@ -19,6 +20,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "lint": "eslint 'src/**/*.tsx' --quiet",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
