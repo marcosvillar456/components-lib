@@ -1,80 +1,35 @@
-import classNames from 'classnames';
 import './styles/__index.scss';
-export interface OfferPriceInterface {
-  deviceType: string;
-  price: {
-    total_price?: string;
-    cents?: string;
-    text_period?: string;
-    full_price: string;
-  };
-  discount_pill: {
-    background_color: string;
-    label: string;
-    color: string;
-  };
-  separator: boolean;
-  description?: {
-    label: string;
-    label_left: boolean;
-  };
-}
-
-// interface PriceDiscountedPriceProps {
-//   total: string;
-//   cents: string;
-//   period: string;
-//   isDiscount: boolean;
-// }
-
-// function PriceDiscountedPrice({
-//   total,
-//   cents,
-//   period,
-//   isDiscount,
-// }: any): JSX.Element {
-//   return (
-//     <div className='price-proposal-value__price'>
-//       <div
-//         className={classNames('price-proposal-value__price-total', {
-//           'price-proposal-value__price-total-without-discount': isDiscount,
-//         })}
-//       >
-//         {total}
-//       </div>
-//       {cents && (
-//         <div className='price-proposal-value__price-cents'>{cents}</div>
-//       )}
-//       {period && (
-//         <div className='price-proposal-value__price-period'>{period}</div>
-//       )}
-//     </div>
-//   );
-// }
+import classNames from 'classnames';
+import type { OfferPriceInterface } from './types';
+import Pill from '../Pill';
 
 const OfferPrice = ({
-  deviceType,
   price,
   discount_pill,
-  separator = true,
+  separator,
   description,
 }: OfferPriceInterface): JSX.Element => {
   const { total_price, cents, text_period, full_price } = price;
-  const sizePill = deviceType === 'desktop' ? 'large' : 'small';
+
   return (
     <div
       className={classNames('offer', {
         'offer--separator': separator,
       })}
     >
-      {/* Renderiza el descuento */}
       {full_price && (
-        <div className='offer-discount'>
-          <span>{full_price}</span>
+        <div
+          className={classNames('offer-discount', {
+            'offer-discount--pill': discount_pill,
+          })}
+        >
+          <span className='offer-discount--strike'>{full_price}</span>
+          {discount_pill && (
+            <Pill text={{ label: discount_pill.label }} background='green' />
+          )}
         </div>
       )}
 
-      {/* Renderiza el precio con cents */}
       {total_price && (
         <div className='offer-price'>
           <span className='offer-price--total'>

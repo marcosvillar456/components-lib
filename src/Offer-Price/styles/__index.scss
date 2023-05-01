@@ -8,10 +8,19 @@
   }
 
   &-discount {
+    @import '../../Pill/styles/_index';
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    text-decoration: line-through;
+
+    &--pill {
+      display: flex;
+      gap: 5px;
+    }
+
+    &--strike {
+      text-decoration: line-through;
+    }
   }
 
   &-description {

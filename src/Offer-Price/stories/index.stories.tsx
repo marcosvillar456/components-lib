@@ -1,7 +1,5 @@
-import { Story, Meta } from '@storybook/react';
 import OfferPrice from '../index';
-import { OfferPriceInterface } from '../index';
-import { within } from '@testing-library/react';
+import type { OfferPriceInterface } from '../types';
 
 export default {
   title: 'OfferPrice',
@@ -13,7 +11,7 @@ export default {
     price: {
       control: 'object',
     },
-    discount__pill: {
+    discount_pill: {
       control: 'object',
     },
     separator: {
@@ -23,25 +21,26 @@ export default {
       constrol: 'object',
     },
   },
-} as Meta;
+};
 
-const Template: Story<OfferPriceInterface> = (args) => <OfferPrice {...args} />;
+const Template = (args: OfferPriceInterface) => <OfferPrice {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
-  deviceType: 'desktop!',
+  separator: true,
   price: {
     full_price: '$ 17.899',
     cents: '99',
     text_period: '/mes',
     total_price: '$ 50.690',
   },
-  discount__pill: {
-    background_color: '',
+  discount_pill: {
     label: '70% OFF',
-    color: 'string',
+    background_color: 'green',
   },
-  separator: true,
-  description: { label: 'Description', label_left: false },
+  description: {
+    label: 'Description',
+    label_left: false,
+  },
 };
