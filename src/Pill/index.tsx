@@ -10,7 +10,7 @@ const Pill = ({
   style,
 }: PillInterface): JSX.Element => {
   const { label, color = '#FFF' } = text;
-
+  
   const containerStyle = {
     ...style,
     '--background-pill': background,
@@ -35,7 +35,7 @@ const Pill = ({
       )}
       <p className='pill__text'>{label}</p>
     </div>
-  )
+  );
 };
 
 Pill.defaultProps = {

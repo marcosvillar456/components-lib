@@ -19,4 +19,14 @@ module.exports = {
     '.*/.storybook/.*',
     '.stories.',
   ],
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        diagnostics: false,
+        tsconfig: 'tsconfig.json',
+        isolatedModules: false,
+      },
+    ],
+  },
 };

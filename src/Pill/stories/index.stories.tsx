@@ -20,6 +20,7 @@ export default {
 const Template = (args: PillInterface) => <Pill {...args} />;
 
 export const Default = Template.bind({});
+
 Default.args = {
   text: {
     label: 'Soy una Pill',
