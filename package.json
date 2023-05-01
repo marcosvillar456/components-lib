@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "pull": "git fetch --all && git pull",
     "lint": "eslint 'src/**/*.tsx' --quiet",
     "lint:fix": "eslint 'src/**/*.ts?(x)' --fix",
     "storybook": "storybook dev -p 6006",
@@ -26,6 +27,17 @@
       }
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "jest --bail --findRelatedTests"
+    ]
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -41,7 +53,11 @@
     "@storybook/react-webpack5": "^7.0.7",
     "@storybook/testing-library": "^0.1.0",
     "@types/jest": "^29.5.1",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
     "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
     "node-sass": "^8.0.0",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
