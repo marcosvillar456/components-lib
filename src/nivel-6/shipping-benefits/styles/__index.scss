@@ -1,0 +1,54 @@
+.benefits-shipping {
+  display: flex;
+  column-gap: 16px;
+  padding: 0 24px 24px;
+
+  .benefit-card {
+    border-radius: 6px;
+    max-height: 96px;
+    display: flex;
+    background-color: #ffce52;
+
+    &-container {
+      padding: 16px;
+      width: 65%;
+
+      &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+        margin: 0;
+      }
+
+      &__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+
+    &-image {
+      width: 35%;
+      margin: 0;
+
+      &::after {
+        background: linear-gradient(
+          90deg,
+          #ffce52 0%,
+          rgba(255, 206, 82, 0.0001) 60.94%
+        );
+        content: "";
+        display: block;
+        height: 96px;
+        margin-top: -100px;
+        position: relative;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

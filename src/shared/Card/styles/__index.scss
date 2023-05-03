@@ -1,0 +1,26 @@
+.card {
+  font-family: "Proxima Nova", -apple-system, "Roboto", Arial, sans-serif;
+  border-radius: 6px;
+  border: 1px solid;
+  max-width: 800px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 16px 24px;
+
+    &__pill {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+    }
+
+    &__title {
+      margin: 0px;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+  }
+}

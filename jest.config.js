@@ -6,7 +6,7 @@ module.exports = {
   modulePathIgnorePatterns: ['/lib'],
   coverageDirectory: '<rootDir>/coverage',
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts?(x)'],
+  collectCoverageFrom: ['src/**/**/*.ts?(x)'],
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
   },
