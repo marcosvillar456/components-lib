@@ -1,4 +1,4 @@
-interface ImageInterface {
+type ImageInterface = {
   src: string;
   alt: string;
   width?: number;
