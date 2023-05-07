@@ -1,31 +1,31 @@
-import '@testing-library/jest-dom';
-import OfferPrice from '..';
-import { render } from '@testing-library/react';
+import "@testing-library/jest-dom";
+import OfferPrice from "..";
+import { render } from "@testing-library/react";
 
 const props = {
   separator: true,
   price: {
-    full_price: '$ 17.899',
-    cents: '99',
-    text_period: '/mes',
-    total_price: '$ 50.690',
+    full_price: "$ 17.899",
+    cents: "99",
+    text_period: "/mes",
+    total_price: "$ 50.690",
   },
   discount_pill: {
-    label: '70% OFF',
-    background_color: 'green',
+    label: "70% OFF",
+    background_color: "green",
   },
   description: {
-    label: 'Description',
+    label: "Description",
     label_left: false,
   },
 };
 
-describe('Pill component', () => {
+describe("Pill component", () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
-  test('snapshot of component', () => {
+  test("snapshot of component", () => {
     const { asFragment } = render(<OfferPrice {...props} />);
 
     expect(asFragment()).toMatchInlineSnapshot(`
@@ -34,10 +34,10 @@ describe('Pill component', () => {
           class="offer offer--separator"
         >
           <div
-            class="offer-discount offer-discount--pill"
+            class="offer__discount offer__discount--pill"
           >
             <span
-              class="offer-discount--strike"
+              class="offer__discount--strike"
             >
               $ 17.899
             </span>
@@ -53,26 +53,26 @@ describe('Pill component', () => {
             </div>
           </div>
           <div
-            class="offer-price"
+            class="offer__price"
           >
             <span
-              class="offer-price--total"
+              class="offer__total"
             >
               $ 50.690
               <sup
-                class="offer-price--cents"
+                class="offer__cents"
               >
                 99
               </sup>
             </span>
             <span
-              class="offer-price--period"
+              class="offer__period"
             >
               /mes
             </span>
           </div>
           <div
-            class="offer-description"
+            class="offer__description"
           >
             Description
           </div>
@@ -81,7 +81,7 @@ describe('Pill component', () => {
     `);
   });
 
-  test('should render if not send discount__pill and separator is false', () => {
+  test("should render if not send discount__pill and separator is false", () => {
     const newProps = { ...props, separator: false, discount_pill: null };
     const { asFragment } = render(<OfferPrice {...newProps} />);
     expect(asFragment()).toMatchInlineSnapshot(`
@@ -90,35 +90,35 @@ describe('Pill component', () => {
           class="offer"
         >
           <div
-            class="offer-discount"
+            class="offer__discount"
           >
             <span
-              class="offer-discount--strike"
+              class="offer__discount--strike"
             >
               $ 17.899
             </span>
           </div>
           <div
-            class="offer-price"
+            class="offer__price"
           >
             <span
-              class="offer-price--total"
+              class="offer__total"
             >
               $ 50.690
               <sup
-                class="offer-price--cents"
+                class="offer__cents"
               >
                 99
               </sup>
             </span>
             <span
-              class="offer-price--period"
+              class="offer__period"
             >
               /mes
             </span>
           </div>
           <div
-            class="offer-description"
+            class="offer__description"
           >
             Description
           </div>

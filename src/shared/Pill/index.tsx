@@ -1,4 +1,4 @@
-import "./styles/__index.scss";
+import "./styles/_index.scss";
 import Image from "../Image";
 import classNames from "classnames";
 import type { PillInterface, stylesInlineInterface } from "./types";

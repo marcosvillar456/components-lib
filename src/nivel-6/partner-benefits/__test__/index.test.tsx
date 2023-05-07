@@ -47,10 +47,10 @@ describe("PartnerBenefits component", () => {
           class="card"
         >
           <div
-            class="card-header"
+            class="card__header"
           >
             <h1
-              class="card-header__title"
+              class="card__title"
             >
               Películas y series
             </h1>
@@ -62,7 +62,7 @@ describe("PartnerBenefits component", () => {
               class="benefit"
             >
               <figure
-                class="benefit-background"
+                class="benefit__background"
               >
                 <img
                   alt="hbo"
@@ -72,10 +72,10 @@ describe("PartnerBenefits component", () => {
                 />
               </figure>
               <div
-                class="benefit-container"
+                class="benefit__container"
               >
                 <figure
-                  class="benefit-container__logo"
+                  class="benefit__logo"
                 >
                   <img
                     alt="logo 1"
@@ -85,20 +85,20 @@ describe("PartnerBenefits component", () => {
                   />
                 </figure>
                 <div
-                  class="benefit-container__offer"
+                  class="benefit__offer"
                 >
                   <p
-                    class="benefit-container__offer--period"
+                    class="benefit__period"
                   >
                     7 DÍAS GRATIS
                   </p>
                   <p
-                    class="benefit-container__offer--discount"
+                    class="benefit__discount"
                   >
                     50% OFF
                   </p>
                   <p
-                    class="benefit-container__offer--partner"
+                    class="benefit__partner"
                   >
                     HBO Max
                   </p>
@@ -109,7 +109,7 @@ describe("PartnerBenefits component", () => {
               class="benefit"
             >
               <figure
-                class="benefit-background"
+                class="benefit__background"
               >
                 <img
                   alt="hbo"
@@ -119,10 +119,10 @@ describe("PartnerBenefits component", () => {
                 />
               </figure>
               <div
-                class="benefit-container"
+                class="benefit__container"
               >
                 <figure
-                  class="benefit-container__logo"
+                  class="benefit__logo"
                 >
                   <img
                     alt="logo 2"
@@ -132,20 +132,20 @@ describe("PartnerBenefits component", () => {
                   />
                 </figure>
                 <div
-                  class="benefit-container__offer"
+                  class="benefit__offer"
                 >
                   <p
-                    class="benefit-container__offer--period"
+                    class="benefit__period"
                   >
                     7 DÍAS GRATIS
                   </p>
                   <p
-                    class="benefit-container__offer--discount"
+                    class="benefit__discount"
                   >
                     50% OFF
                   </p>
                   <p
-                    class="benefit-container__offer--partner"
+                    class="benefit__partner"
                   >
                     Paramount+
                   </p>

@@ -1,13 +1,13 @@
 import type CardInterface from "./types";
 import Pill from "../Pill";
-import "./styles/__index.scss";
+import "./styles/_card.scss";
 
 const Card = ({ title, pill, children }: CardInterface): JSX.Element => {
   return (
     <div className="card">
-      <div className="card-header">
+      <div className="card__header">
         {pill && <Pill text={pill.text} background={pill.background} card />}
-        <h1 className="card-header__title">{title}</h1>
+        <h1 className="card__title">{title}</h1>
       </div>
       {children}
     </div>

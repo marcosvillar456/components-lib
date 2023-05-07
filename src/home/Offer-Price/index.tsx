@@ -19,11 +19,11 @@ const OfferPrice = ({
     >
       {full_price && (
         <div
-          className={classNames('offer-discount', {
-            'offer-discount--pill': discount_pill,
+          className={classNames('offer__discount', {
+            'offer__discount--pill': discount_pill,
           })}
         >
-          <span className='offer-discount--strike'>{full_price}</span>
+          <span className='offer__discount--strike'>{full_price}</span>
           {discount_pill && (
             <Pill text={{ label: discount_pill.label }} background='green' />
           )}
@@ -31,21 +31,21 @@ const OfferPrice = ({
       )}
 
       {total_price && (
-        <div className='offer-price'>
-          <span className='offer-price--total'>
+        <div className='offer__price'>
+          <span className='offer__total'>
             {total_price}
-            {cents && <sup className='offer-price--cents'>{cents}</sup>}
+            {cents && <sup className='offer__cents'>{cents}</sup>}
           </span>
           {text_period && (
-            <span className='offer-price--period'>{text_period}</span>
+            <span className='offer__period'>{text_period}</span>
           )}
         </div>
       )}
 
       {description && (
         <div
-          className={classNames('offer-description', {
-            'offer-description--left': description.label_left,
+          className={classNames('offer__description', {
+            'offer__description--left': description.label_left,
           })}
         >
           {description.label}

@@ -1,21 +1,53 @@
 import MoreBenefits from "..";
+import type { MoreBenefitsInterface } from "../types";
 
 export default {
-  title: "Nivel-6/More-Benefits",
+  title: "Nivel 6/More Benefits",
   component: MoreBenefits,
   argTypes: {
     title: {
-      control: "text",
+      control: { type: "text" },
+    },
+    pill: {
+      control: {
+        type: "object",
+        fields: {
+          card: { type: "boolean" },
+          text: {
+            type: "object",
+            fields: {
+              label: { type: "text" },
+            },
+          },
+          background: { type: "color" },
+        },
+      },
     },
     benefits: {
       control: {
         type: "array",
+        of: {
+          type: "object",
+          fields: {
+            title: { type: "text" },
+            subtitle: { type: "text" },
+            img: {
+              type: "object",
+              fields: {
+                src: { type: "text" },
+                alt: { type: "text" },
+              },
+            },
+          },
+        },
       },
     },
   },
 };
 
-const Template = (args) => <MoreBenefits {...args} />;
+const Template = (args: MoreBenefitsInterface): JSX.Element => (
+  <MoreBenefits {...args} />
+);
 
 export const Default = Template.bind({});
 

@@ -2,15 +2,34 @@ import PartnerBenefits from "..";
 import type { PartnerBenefitsInterface } from "../types";
 
 export default {
-  title: "Nivel-6/Partners-Benefits",
+  title: "Nivel 6/Partners Benefits",
   component: PartnerBenefits,
   argTypes: {
-    title: {
-      control: "text",
-    },
-    benefits: {
+    title: { control: "text" },
+    partners: {
       control: {
         type: "array",
+        of: {
+          type: "object",
+          fields: {
+            title: { type: "text" },
+            offer: {
+              type: "object",
+              fields: {
+                label: { type: "text" },
+                discount: { type: "text" },
+              },
+            },
+            image_background: { type: "text" },
+            logo: {
+              type: "object",
+              fields: {
+                src: { type: "text" },
+                alt: { type: "text" },
+              },
+            },
+          },
+        },
       },
     },
   },

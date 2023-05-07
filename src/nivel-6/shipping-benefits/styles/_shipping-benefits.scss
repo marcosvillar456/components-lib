@@ -3,32 +3,31 @@
   column-gap: 16px;
   padding: 0 24px 24px;
 
-  .benefit-card {
+  .benefit {
     border-radius: 6px;
     max-height: 96px;
     display: flex;
     background-color: #ffce52;
 
-    &-container {
+    &__container {
       padding: 16px;
       width: 65%;
-
-      &__title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.25;
-        margin: 0;
-      }
-
-      &__subtitle {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-      }
     }
 
-    &-image {
-      width: 35%;
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+
+    &__image {
       margin: 0;
 
       &::after {

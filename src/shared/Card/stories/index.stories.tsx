@@ -5,11 +5,18 @@ export default {
   title: "Shared/Card",
   component: Card,
   argTypes: {
-    title: {
-      control: "text",
-    },
+    title: { control: "text" },
     pill: {
       control: "object",
+      fields: {
+        text: {
+          control: "object",
+          field: {
+            label: { control: "text" },
+          },
+        },
+        background: { control: "color" },
+      },
     },
   },
 };

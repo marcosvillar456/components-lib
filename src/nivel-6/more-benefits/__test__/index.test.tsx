@@ -45,7 +45,7 @@ describe("MoreBenefits component", () => {
           class="card"
         >
           <div
-            class="card-header"
+            class="card__header"
           >
             <div
               class="pill pill--card"
@@ -58,7 +58,7 @@ describe("MoreBenefits component", () => {
               </p>
             </div>
             <h1
-              class="card-header__title"
+              class="card__title"
             >
               Películas y series
             </h1>
@@ -70,7 +70,7 @@ describe("MoreBenefits component", () => {
               class="benefit"
             >
               <figure
-                class="benefit-image"
+                class="benefit__image"
               >
                 <img
                   alt="Ofertas exclusivas"
@@ -80,15 +80,15 @@ describe("MoreBenefits component", () => {
                 />
               </figure>
               <div
-                class="benefit-container"
+                class="benefit__container"
               >
                 <h1
-                  class="benefit-container__title"
+                  class="benefit__title"
                 >
                   Ofertas exclusivas
                 </h1>
                 <p
-                  class="benefit-container__subtitle"
+                  class="benefit__subtitle"
                 >
                   Descuentos especiales en tus compras
                 </p>
@@ -98,7 +98,7 @@ describe("MoreBenefits component", () => {
               class="benefit"
             >
               <figure
-                class="benefit-image"
+                class="benefit__image"
               >
                 <img
                   alt="Descuentos sorpresa"
@@ -108,15 +108,15 @@ describe("MoreBenefits component", () => {
                 />
               </figure>
               <div
-                class="benefit-container"
+                class="benefit__container"
               >
                 <h1
-                  class="benefit-container__title"
+                  class="benefit__title"
                 >
                   Descuentos sorpresa
                 </h1>
                 <p
-                  class="benefit-container__subtitle"
+                  class="benefit__subtitle"
                 >
                   Todos los meses en tus marcas favoritas
                 </p>

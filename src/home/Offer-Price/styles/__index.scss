@@ -1,5 +1,5 @@
 .offer {
-  font-family: 'Nova', sans-serif;
+  font-family: "Nova", sans-serif;
   width: fit-content;
 
   &--separator {
@@ -7,8 +7,8 @@
     padding-left: 6px;
   }
 
-  &-discount {
-    @import '../../../shared/Pill/styles/_index';
+  &__discount {
+    @import "../../../shared/Pill/styles/index";
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -23,7 +23,7 @@
     }
   }
 
-  &-description {
+  &__description {
     font-weight: 600;
     font-size: 12px;
     line-height: 10px;
@@ -33,23 +33,21 @@
     }
   }
 
-  &-price {
+  &__price {
     display: flex;
     align-items: flex-end;
     font-weight: 600;
+  }
+  
+  &__total {
+    font-size: 24px;
+  }
 
-    &--total {
-      font-size: 24px;
+  &__cents {
+    font-size: 14px;
+  }
 
-    }
-
-    &--cents {
-      font-size: 14px;
-
-    }
-
-    &--period {
-      font-size: 18px;
-    }
+  &__period {
+    font-size: 18px;
   }
 }

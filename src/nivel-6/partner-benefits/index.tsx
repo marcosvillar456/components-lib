@@ -24,24 +24,20 @@ const PartnerBenefits = ({
                   alt="hbo"
                   height={48}
                   width={48}
-                  className="benefit-background"
+                  className="benefit__background"
                 />
-                <div className="benefit-container">
+                <div className="benefit__container">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
                     height={48}
                     width={48}
-                    className="benefit-container__logo"
+                    className="benefit__logo"
                   />
-                  <div className="benefit-container__offer">
-                    <p className="benefit-container__offer--period">
-                      {offer.label}
-                    </p>
-                    <p className="benefit-container__offer--discount">
-                      {offer.discount}
-                    </p>
-                    <p className="benefit-container__offer--partner">{title}</p>
+                  <div className="benefit__offer">
+                    <p className="benefit__period">{offer.label}</p>
+                    <p className="benefit__discount">{offer.discount}</p>
+                    <p className="benefit__partner">{title}</p>
                   </div>
                 </div>
               </div>

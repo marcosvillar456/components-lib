@@ -5,18 +5,25 @@ export default {
   title: "Shared/Pill",
   component: Pill,
   argTypes: {
-    icon: {
-      control: "object",
-    },
     text: {
       control: "object",
+      fields: {
+        label: { control: "text" },
+        color: { control: "color" },
+      },
+    },
+    icon: {
+      control: "object",
+      fields: {
+        src: { control: "text" },
+        alt: { control: "text" },
+        separator: { control: "boolean" },
+      },
     },
     background: {
       control: { type: "color" },
     },
-    card: {
-      control: "boolean",
-    },
+    card: { control: "boolean" },
   },
 };
 

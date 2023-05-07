@@ -10,6 +10,20 @@ export default {
     benefits: {
       control: {
         type: "array",
+        of: {
+          type: "object",
+          fields: {
+            title: { type: "text" },
+            subtitle: { type: "text" },
+            img: {
+              type: "object",
+              fields: {
+                src: { type: "text" },
+                alt: { type: "text" },
+              },
+            },
+          },
+        },
       },
     },
   },

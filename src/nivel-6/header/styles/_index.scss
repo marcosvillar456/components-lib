@@ -1,0 +1,156 @@
+@import "../../../home/Offer-Price/styles/__index.scss";
+h1,
+p,
+figure {
+  margin: 0;
+}
+
+.header {
+  font-family: "Nova", sans-serif;
+  background: linear-gradient(270deg, #a90f90 0%, #0c1a51 100%);
+  color: #fff;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 48px 30px;
+  }
+
+  &__left {
+    width: 460px;
+    margin-right: 52px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 8px;
+    max-width: 380px;
+  }
+
+  .offer {
+    margin-top: 20px;
+
+    &__discount {
+      font-size: 16px;
+
+      &--pill {
+        gap: 8px;
+      }
+    }
+
+    &__price {
+      margin-top: 15px;
+    }
+
+    &__total {
+      font-size: 36px;
+      line-height: 35px;
+    }
+
+    &__period {
+      font-size: 24px;
+    }
+  }
+
+  &__benefits {
+    display: flex;
+    column-gap: 16px;
+    width: 428px;
+  }
+
+  &__benefit {
+    max-width: 132px;
+
+    &-image {
+      display: flex;
+
+      img {
+        border-radius: 6px 6px 0 0;
+      }
+    }
+
+    &-box {
+      background: linear-gradient(
+        54.76deg,
+        var(--primary_color) 27.62%,
+        var(--secondary_color) 73.53%
+      );
+      padding: 8px;
+      row-gap: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 78px;
+      border-radius: 0 0 6px 6px;
+      box-sizing: border-box;
+
+      &-title {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    &__benefits {
+      width: auto;
+    }
+    &__left {
+      margin-right: 12px;
+    }
+
+    &__benefit {
+      &-image {
+        img {
+          height: 24vw;
+          width: 16vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 895px) {
+  .header {
+    &__benefits {
+      width: auto;
+    }
+
+    &__benefit {
+      &:first-child {
+        display: none;
+      }
+      &-image {
+        img {
+          height: auto;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    &__benefit {
+      &-image {
+        img {
+          height: 24vw;
+          width: 16vw;
+        }
+      }
+    }
+  }
+}

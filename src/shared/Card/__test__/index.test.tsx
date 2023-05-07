@@ -30,7 +30,7 @@ describe("Card component", () => {
           class="card"
         >
           <div
-            class="card-header"
+            class="card__header"
           >
             <div
               class="pill pill--card"
@@ -43,7 +43,7 @@ describe("Card component", () => {
               </p>
             </div>
             <h1
-              class="card-header__title"
+              class="card__title"
             >
               Soy la Card
             </h1>

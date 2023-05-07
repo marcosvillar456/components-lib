@@ -19,11 +19,11 @@ const MoreBenefits = ({
                 alt={img.alt}
                 height={88}
                 width={64}
-                className="benefit-image"
+                className="benefit__image"
               />
-              <div className="benefit-container">
-                <h1 className="benefit-container__title">{title}</h1>
-                <p className="benefit-container__subtitle">{subtitle}</p>
+              <div className="benefit__container">
+                <h1 className="benefit__title">{title}</h1>
+                <p className="benefit__subtitle">{subtitle}</p>
               </div>
             </div>
           )

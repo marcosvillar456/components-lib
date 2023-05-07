@@ -37,10 +37,10 @@ describe("ShippingBenefits component", () => {
           class="card"
         >
           <div
-            class="card-header"
+            class="card__header"
           >
             <h1
-              class="card-header__title"
+              class="card__title"
             >
               Beneficios en envíos
             </h1>
@@ -49,24 +49,24 @@ describe("ShippingBenefits component", () => {
             class="benefits-shipping"
           >
             <div
-              class="benefit-card"
+              class="benefit"
             >
               <div
-                class="benefit-card-container"
+                class="benefit__container"
               >
                 <p
-                  class="benefit-card-container__title"
+                  class="benefit__container__title"
                 >
                   Envíos gratis
                 </p>
                 <p
-                  class="benefit-card-container__subtitle"
+                  class="benefit__container__subtitle"
                 >
                   En miles de productos desde $ 8.000
                 </p>
               </div>
               <figure
-                class="benefit-card-image"
+                class="benefit__image"
               >
                 <img
                   alt="envios"
@@ -77,24 +77,24 @@ describe("ShippingBenefits component", () => {
               </figure>
             </div>
             <div
-              class="benefit-card"
+              class="benefit"
             >
               <div
-                class="benefit-card-container"
+                class="benefit__container"
               >
                 <p
-                  class="benefit-card-container__title"
+                  class="benefit__container__title"
                 >
                   45% OFF en envíos
                 </p>
                 <p
-                  class="benefit-card-container__subtitle"
+                  class="benefit__container__subtitle"
                 >
                   En miles de productos desde $ 8.000
                 </p>
               </div>
               <figure
-                class="benefit-card-image"
+                class="benefit__image"
               >
                 <img
                   alt="envios"
