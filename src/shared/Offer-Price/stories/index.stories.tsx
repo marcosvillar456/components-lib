@@ -1,24 +1,24 @@
-import OfferPrice from '..';
-import type { OfferPriceInterface } from '../types';
+import OfferPrice from "..";
+import type { OfferPriceInterface } from "../types";
 
 export default {
-  title: 'Home/OfferPrice',
+  title: "Shared/OfferPrice",
   component: OfferPrice,
   argTypes: {
     deviceType: {
-      control: 'text',
+      control: "text",
     },
     price: {
-      control: 'object',
+      control: "object",
     },
     discount_pill: {
-      control: 'object',
+      control: "object",
     },
     separator: {
-      control: 'boolean',
+      control: "boolean",
     },
     description: {
-      constrol: 'object',
+      control: "object",
     },
   },
 };
@@ -30,17 +30,17 @@ export const Default = Template.bind({});
 Default.args = {
   separator: true,
   price: {
-    full_price: '$ 17.899',
-    cents: '99',
-    text_period: '/mes',
-    total_price: '$ 50.690',
+    full_price: "$ 17.899",
+    cents: "99",
+    text_period: "/mes",
+    total_price: "$ 50.690",
   },
   discount_pill: {
-    label: '70% OFF',
-    background_color: 'green',
+    label: "70% OFF",
+    background_color: "green",
   },
   description: {
-    label: 'Description',
+    label: "Description",
     label_left: false,
   },
 };

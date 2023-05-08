@@ -1,0 +1,30 @@
+.subscription-cta {
+  box-sizing: border-box;
+  height: auto;
+  min-width: 350px;
+  padding: 24px;
+  text-align: center;
+
+  &__button {
+    max-width: 260px;
+    min-width: 192px;
+    height: 48px;
+    width: 100%;
+    margin: 0 4px 2px;
+    padding: 0 5px;
+    background-color: #3483fa;
+    border-color: transparent;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+  }
+  &__disclaimer {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.17;
+    margin: 7px 0 0;
+  }
+}

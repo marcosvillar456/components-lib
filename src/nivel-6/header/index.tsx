@@ -1,5 +1,6 @@
-import OfferPrice from "home/Offer-Price";
+import OfferPrice from "../../shared/Offer-Price";
 import Image from "shared/Image";
+import SubscriptionCTA from "shared/subscription-cta";
 import type { HeaderInterface, stylesInlineInterface } from "./types";
 import "./styles/_index.scss";
 
@@ -8,6 +9,7 @@ const Header = ({
   subtitle,
   offer,
   benefits,
+  subscription,
 }: HeaderInterface): JSX.Element => {
   return (
     <div className="header">
@@ -16,6 +18,7 @@ const Header = ({
           <h1 className="header__title">{title}</h1>
           <p className="header__subtitle">{subtitle}</p>
           <OfferPrice {...offer} separator={false} />
+          <SubscriptionCTA {...subscription} />
         </div>
         <div className="header__benefits">
           {benefits.map(({ icon, image, title, gradient }): JSX.Element => {

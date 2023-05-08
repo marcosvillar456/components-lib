@@ -1,4 +1,4 @@
-import './styles/__index.scss';
+import './styles/_index.scss';
 import classNames from 'classnames';
 import type { OfferPriceInterface } from './types';
 import Pill from '../../shared/Pill';

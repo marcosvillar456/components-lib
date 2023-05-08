@@ -1,5 +1,6 @@
 import Header from "..";
 import type { HeaderInterface } from "../types";
+
 export default {
   title: "Nivel 6/Header",
   component: Header,
@@ -22,6 +23,11 @@ Default.args = {
     discount_pill: {
       label: "53% OFF",
     },
+  },
+  subscription: {
+    label: "Quiero suscribirme",
+    disclaimer:
+      "Al suscribirte, aceptás los Términos y condiciones de Mercado Puntos. Podés cancelar cuando quieras",
   },
   benefits: [
     {

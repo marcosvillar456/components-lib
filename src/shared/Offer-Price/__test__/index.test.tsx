@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom";
-import OfferPrice from "..";
+import OfferPrice from "../../Offer-Price";
 import { render } from "@testing-library/react";
 
 const props = {
