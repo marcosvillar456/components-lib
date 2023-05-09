@@ -5,12 +5,10 @@ import type { PillInterface, stylesInlineInterface } from "./types";
 
 const Pill = ({
   icon,
-  text,
+  text: { label, color = "#FFF" },
   background,
   card = false,
 }: PillInterface): JSX.Element => {
-  const { label, color = "#FFF" } = text;
-
   const containerStyle: stylesInlineInterface = {
     "--background-pill": background,
     "--text-color-pill": color,

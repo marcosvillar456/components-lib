@@ -9,7 +9,7 @@ export interface OfferPriceInterface {
     label: string;
     color?: string;
   };
-  separator: boolean;
+  separator: boolean ;
   description?: {
     label: string;
     label_left: boolean;
