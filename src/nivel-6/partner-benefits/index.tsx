@@ -1,6 +1,7 @@
 import Image from "../../shared/Image";
 import Card from "../../shared/Card";
 import type { PartnerBenefitsInterface, partnerInterface } from "./types";
+import classNames from "classnames";
 import "./styles/__index.scss";
 
 const PartnerBenefits = ({
@@ -9,7 +10,11 @@ const PartnerBenefits = ({
 }: PartnerBenefitsInterface): JSX.Element => {
   return (
     <Card title={title}>
-      <div className="partners-benefits">
+      <div
+        className={classNames("partners-benefits", {
+          "partners-benefits--group": partners.length > 4,
+        })}
+      >
         {partners.map(
           ({
             offer,

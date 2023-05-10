@@ -7,7 +7,7 @@ const props = {
   benefits: [
     {
       title: "Envíos gratis",
-      subtitle: "En miles de productos desde $ 8.000",
+      subtitle: "En miles de productos%% desde $ 8.000",
       image: {
         src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/free-shipping@2x.jpg",
         alt: "envios",
@@ -55,14 +55,18 @@ describe("ShippingBenefits component", () => {
                 class="benefit__container"
               >
                 <p
-                  class="benefit__container__title"
+                  class="benefit__title"
                 >
                   Envíos gratis
                 </p>
                 <p
-                  class="benefit__container__subtitle"
+                  class="benefit__subtitle"
                 >
-                  En miles de productos desde $ 8.000
+                  <span>
+                    En miles de productos
+                    <br />
+                     desde $ 8.000
+                  </span>
                 </p>
               </div>
               <figure
@@ -83,14 +87,16 @@ describe("ShippingBenefits component", () => {
                 class="benefit__container"
               >
                 <p
-                  class="benefit__container__title"
+                  class="benefit__title"
                 >
                   45% OFF en envíos
                 </p>
                 <p
-                  class="benefit__container__subtitle"
+                  class="benefit__subtitle"
                 >
-                  En miles de productos desde $ 8.000
+                  <span>
+                    En miles de productos desde $ 8.000
+                  </span>
                 </p>
               </div>
               <figure

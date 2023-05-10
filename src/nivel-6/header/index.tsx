@@ -1,6 +1,6 @@
 import OfferPrice from "../../shared/Offer-Price";
-import Image from "shared/Image";
-import SubscriptionCTA from "shared/subscription-cta";
+import Image from "../../shared/Image";
+import SubscriptionCTA from "../../shared/subscription-cta";
 import type { HeaderInterface, stylesInlineInterface } from "./types";
 import "./styles/_index.scss";
 
@@ -28,7 +28,7 @@ const Header = ({
             };
 
             return (
-              <div className="header__benefit">
+              <div className="header__benefit" key={image.alt}>
                 <Image
                   src={image.src}
                   alt={image.alt}

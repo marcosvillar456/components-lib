@@ -1,5 +1,4 @@
 import OfferPrice from "..";
-import type { Meta, StoryFn } from "@storybook/react";
 
 export default {
   title: "Shared/OfferPrice",
@@ -37,7 +36,7 @@ export default {
       },
     },
   },
-} as Meta;
+};
 
 export const Default = {
   args: {

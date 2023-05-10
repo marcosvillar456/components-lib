@@ -37,8 +37,9 @@
     display: flex;
     align-items: flex-end;
     font-weight: 600;
+    min-width: fit-content;
   }
-  
+
   &__total {
     font-size: 24px;
   }

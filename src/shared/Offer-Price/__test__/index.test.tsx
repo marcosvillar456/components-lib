@@ -43,7 +43,7 @@ describe("Pill component", () => {
             </span>
             <div
               class="pill"
-              style="--background-pill: green; --text-color-pill: #FFF;"
+              style="--background-pill: #008000; --text-color-pill: #FFF;"
             >
               <p
                 class="pill__text"

@@ -1,6 +1,6 @@
 import Image from "../../shared/Image";
 import Card from "../../shared/Card";
-
+import Markdown from "../../utils";
 import type { ShippingBenefitsInterface, benefitInterface } from "./types";
 import "./styles/_shipping-benefits.scss";
 
@@ -15,9 +15,9 @@ const ShippingBenefits = ({
           return (
             <div className="benefit" key={benefit.title}>
               <div className="benefit__container">
-                <p className="benefit__container__title">{benefit.title}</p>
-                <p className="benefit__container__subtitle">
-                  {benefit.subtitle}
+                <p className="benefit__title">{benefit.title}</p>
+                <p className="benefit__subtitle">
+                  {Markdown(benefit.subtitle)}
                 </p>
               </div>
               <Image

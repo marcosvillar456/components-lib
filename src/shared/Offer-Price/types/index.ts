@@ -1,9 +1,9 @@
 export interface OfferPriceInterface {
   price: {
-    total_price?: string;
+    total_price: string;
     cents?: string;
     text_period?: string;
-    full_price: string;
+    full_price?: string;
   };
   discount_pill?: {
     label: string;
