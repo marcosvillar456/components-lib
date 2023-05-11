@@ -1,4 +1,3 @@
-import React from 'react';
 import type ImageInterface from './types';
 
 const Image = ({

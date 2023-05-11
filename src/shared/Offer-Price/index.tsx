@@ -1,7 +1,7 @@
 import "./styles/_index.scss";
 import classNames from "classnames";
 import type { OfferPriceInterface } from "./types";
-import Pill from "../../shared/Pill";
+import Pill from "../Pill";
 
 const OfferPrice = ({
   price,
