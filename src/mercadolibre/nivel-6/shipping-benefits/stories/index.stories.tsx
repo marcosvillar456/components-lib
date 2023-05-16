@@ -7,6 +7,7 @@ export default {
   argTypes: {
     title: {
       control: "text",
+      description: "Title of Benefit",
     },
     benefits: {
       control: {
@@ -26,20 +27,22 @@ export default {
           },
         },
       },
+      description: "Array of Benefits, which is composed of a title, subtitle, and an img object with props src and alt.",
+
     },
   },
 };
 
 export const One_benefits = {
   args: {
-    title: "Beneficios en envíos",
+    title: "Benefits shippings",
     benefits: [
       {
-        title: "Envíos gratis",
-        subtitle: "En miles de productos%% desde $ 8.000",
+        title: "Free Shipping ",
+        subtitle: "In thousands of products%% from $ 8.000",
         image: {
           src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/free-shipping@2x.jpg",
-          alt: "envios",
+          alt: "Shipping",
         },
       },
     ],
@@ -48,22 +51,22 @@ export const One_benefits = {
 
 export const Two_benefits = {
   args: {
-    title: "Beneficios en envíos",
+    title: "Benefits shippings",
     benefits: [
       {
-        title: "Envíos gratis",
-        subtitle: "En miles de productos%% desde $ 8.000",
+        title: "Free Shipping ",
+        subtitle: "In thousands of products%% from $ 8.000",
         image: {
           src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/free-shipping@2x.jpg",
-          alt: "envios 1",
+          alt: "Shipping 1",
         },
       },
       {
-        title: "45% OFF en envíos",
-        subtitle: "En miles de productos%% desde $ 8.000",
+        title: "45% OFF on shipments",
+        subtitle: "In thousands of products%% from $ 8.000",
         image: {
           src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/shipping-discount@2x.jpg",
-          alt: "envios 2 ",
+          alt: "shipping 2",
         },
       },
     ],
@@ -72,33 +75,32 @@ export const Two_benefits = {
 
 export const Three_benefits = {
   args: {
-    title: "Beneficios en envíos",
+    title: "Benefits shipping",
     benefits: [
       {
-        title: "Envíos gratis",
-        subtitle: "En miles de productos%% desde $ 8.000",
+        title: "Free Shipping ",
+        subtitle: "In thousands of products%% from $ 8.000",
         image: {
           src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/free-shipping@2x.jpg",
-          alt: "envios 1",
+          alt: "Shipping 1",
         },
       },
       {
-        title: "45% OFF en envíos",
-        subtitle: "En miles de productos%% desde $ 8.000",
+        title: "45% OFF on shipments",
+        subtitle: "In thousands of products%% from $ 8.000",
         image: {
           src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/shipping-discount@2x.jpg",
-          alt: "envios 2 ",
+          alt: "Shipping 2 ",
         },
       },
       {
-        title: "45% OFF en envíos",
-        subtitle: "En miles de productos%% desde $ 8.000",
+        title: "45% OFF on shipments",
+        subtitle: "In thousands of products%% from $ 8.000",
         image: {
           src: "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/nivel-6/vdp/shipping-benefits/shipping-discount@2x.jpg",
-          alt: "envios 3",
+          alt: "Shipping 3",
         },
       },
     ],
   },
 };
-

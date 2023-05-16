@@ -1,28 +1,23 @@
 import Image from "../../../shared/Image";
 import Card from "../../../shared/Card";
-import type { PartnerBenefitsInterface, partnerInterface } from "./types";
+import type { I_PartnerBenefits, I_partner } from "./types";
 import classNames from "classnames";
 import "./styles/__index.scss";
-import { useState } from "react";
 
 const PartnerBenefits = ({
   title,
   partners,
-}: PartnerBenefitsInterface): JSX.Element => {
+}: I_PartnerBenefits): JSX.Element => {
   return (
     <Card title={title}>
-      <div
-        className={classNames("partners-benefits", {
-          "partners-benefits--group": partners.length > 4,
-        })}
-      >
+      <div className={classNames("partners-benefits")}>
         {partners.map(
           ({
             offer,
             title,
             image_background,
             logo,
-          }: partnerInterface): JSX.Element => {
+          }: I_partner): JSX.Element => {
             return (
               <div className="benefit" key={logo.alt}>
                 <Image

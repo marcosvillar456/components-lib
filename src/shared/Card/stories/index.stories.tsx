@@ -1,5 +1,4 @@
 import Card from "..";
-import type CardInterface from "../types";
 
 export default {
   title: "Shared/Card",
@@ -21,21 +20,19 @@ export default {
   },
 };
 
-const Template = (args: CardInterface) => <Card {...args} />;
-
-export const Default = Template.bind({});
-
-Default.args = {
-  title: "Soy la Card",
-  pill: {
-    text: {
-      label: "Soy la Pill",
+export const Default = {
+  args: {
+    title: "I am a Card",
+    pill: {
+      text: {
+        label: "I am a Pill",
+      },
+      background: "green",
     },
-    background: "green",
+    children: (
+      <div style={{ textAlign: "center" }}>
+        <h1>Here goes my son</h1>
+      </div>
+    ),
   },
-  children: (
-    <div style={{ textAlign: "center" }}>
-      <h1>Aca va mi hijo</h1>
-    </div>
-  ),
 };

@@ -15,6 +15,7 @@
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding-inline-start: 0;
+    flex-wrap: wrap;
   }
 
   .item {
@@ -22,11 +23,12 @@
     display: flex;
     align-items: center;
     min-width: 100px;
-    width: 100%;
+    width: auto;
     padding: 16px;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
-
+    margin: 0;
+    flex-grow: 1;
     &:hover {
       transform: scale(1.06, 1.06);
       background-color: #e5e5e598;
@@ -46,6 +48,13 @@
         background: #3483fa;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+      }
+    }
+    &--big {
+      justify-content: center;
+      &:hover {
+        transform: scale(1.02, 1.02);
+        background-color: #e5e5e598;
       }
     }
 

@@ -1,4 +1,4 @@
-type ImageInterface = {
+interface I_Image  {
   src: string;
   alt: string;
   width?: number;
@@ -6,4 +6,4 @@ type ImageInterface = {
   className?: string;
 }
 
-export default ImageInterface;
+export default I_Image;

@@ -1,16 +1,16 @@
-import type { PillInterface } from "shared/Pill/types";
-import type ImageInterface from "../../../../shared/Image/types";
+import type { I_Pill } from "../../../../shared/Pill/types";
+import type I_Image from "../../../../shared/Image/types";
 
-interface BenefitInterface {
-  img: ImageInterface;
+interface I_benefit {
+  img: I_Image;
   title: string;
   subtitle: string;
 }
 
-interface MoreBenefitsInterface {
+interface I_MoreBenefits {
   title: string;
-  pill: PillInterface;
-  benefits: BenefitInterface[];
+  pill: I_Pill;
+  benefits: I_benefit[];
 }
 
-export { MoreBenefitsInterface, BenefitInterface };
+export type { I_MoreBenefits, I_benefit };

@@ -1,16 +1,16 @@
-import type ImageInterface from "../../Image/types";
+import type I_Image from "../../Image/types";
 
-interface stylesInlineInterface extends React.CSSProperties {
+interface I_StylesInline extends React.CSSProperties {
   "--background-pill": string;
   "--text-color-pill": string;
 }
 
-interface iconInterface extends ImageInterface {
+interface I_Icon extends I_Image {
   separator: boolean;
 }
 
-interface PillInterface {
-  icon?: iconInterface;
+interface I_Pill {
+  icon?: I_Icon;
   card?: boolean;
   text: {
     label: string;
@@ -19,4 +19,4 @@ interface PillInterface {
   background: string;
 }
 
-export { PillInterface, stylesInlineInterface };
+export { I_Pill, I_StylesInline };

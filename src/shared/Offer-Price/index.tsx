@@ -1,6 +1,6 @@
 import "./styles/_index.scss";
 import classNames from "classnames";
-import type { OfferPriceInterface } from "./types";
+import type { I_OfferPrice } from "./types";
 import Pill from "../Pill";
 
 const OfferPrice = ({
@@ -8,7 +8,7 @@ const OfferPrice = ({
   discount_pill,
   separator,
   description,
-}: OfferPriceInterface): JSX.Element => {
+}: I_OfferPrice): JSX.Element => {
   const { total_price, cents, text_period, full_price } = price;
 
   return (

@@ -101,51 +101,55 @@ describe("Header component", () => {
             <div
               class="header__left"
             >
-              <h1
-                class="header__title"
-              >
-                Subí directo al nivel 6
-              </h1>
-              <p
-                class="header__subtitle"
-              >
-                Suscribite y disfrutá los mejores beneficios a un precio increíble.
-              </p>
               <div
-                class="offer"
+                class="header__title-container"
               >
-                <div
-                  class="offer__discount offer__discount--pill"
+                <h1
+                  class="header__title"
                 >
-                  <span
-                    class="offer__discount--strike"
-                  >
-                    $ 1.499
-                  </span>
+                  Subí directo al nivel 6
+                </h1>
+                <p
+                  class="header__subtitle"
+                >
+                  Suscribite y disfrutá los mejores beneficios a un precio increíble.
+                </p>
+                <div
+                  class="offer"
+                >
                   <div
-                    class="pill"
-                    style="--background-pill: #008000; --text-color-pill: #FFF;"
+                    class="offer__discount offer__discount--pill"
                   >
-                    <p
-                      class="pill__text"
+                    <span
+                      class="offer__discount--strike"
                     >
-                      53% OFF
-                    </p>
+                      $ 1.499
+                    </span>
+                    <div
+                      class="pill"
+                      style="--background-pill: #008000; --text-color-pill: #FFF;"
+                    >
+                      <p
+                        class="pill__text"
+                      >
+                        53% OFF
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="offer__price"
-                >
-                  <span
-                    class="offer__total"
+                  <div
+                    class="offer__price"
                   >
-                    $ 699
-                  </span>
-                  <span
-                    class="offer__period"
-                  >
-                    /mes
-                  </span>
+                    <span
+                      class="offer__total"
+                    >
+                      $ 699
+                    </span>
+                    <span
+                      class="offer__period"
+                    >
+                      /mes
+                    </span>
+                  </div>
                 </div>
               </div>
               <div
@@ -362,51 +366,55 @@ describe("Header component", () => {
             <div
               class="header__left"
             >
-              <h1
-                class="header__title"
-              >
-                Subí directo al nivel 6
-              </h1>
-              <p
-                class="header__subtitle"
-              >
-                Suscribite y disfrutá los mejores beneficios a un precio increíble.
-              </p>
               <div
-                class="offer"
+                class="header__title-container"
               >
-                <div
-                  class="offer__discount offer__discount--pill"
+                <h1
+                  class="header__title"
                 >
-                  <span
-                    class="offer__discount--strike"
-                  >
-                    $ 1.499
-                  </span>
+                  Subí directo al nivel 6
+                </h1>
+                <p
+                  class="header__subtitle"
+                >
+                  Suscribite y disfrutá los mejores beneficios a un precio increíble.
+                </p>
+                <div
+                  class="offer"
+                >
                   <div
-                    class="pill"
-                    style="--background-pill: #008000; --text-color-pill: #FFF;"
+                    class="offer__discount offer__discount--pill"
                   >
-                    <p
-                      class="pill__text"
+                    <span
+                      class="offer__discount--strike"
                     >
-                      53% OFF
-                    </p>
+                      $ 1.499
+                    </span>
+                    <div
+                      class="pill"
+                      style="--background-pill: #008000; --text-color-pill: #FFF;"
+                    >
+                      <p
+                        class="pill__text"
+                      >
+                        53% OFF
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="offer__price"
-                >
-                  <span
-                    class="offer__total"
+                  <div
+                    class="offer__price"
                   >
-                    $ 699
-                  </span>
-                  <span
-                    class="offer__period"
-                  >
-                    /mes
-                  </span>
+                    <span
+                      class="offer__total"
+                    >
+                      $ 699
+                    </span>
+                    <span
+                      class="offer__period"
+                    >
+                      /mes
+                    </span>
+                  </div>
                 </div>
               </div>
               <div

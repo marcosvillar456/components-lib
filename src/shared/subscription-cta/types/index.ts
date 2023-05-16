@@ -1,5 +1,5 @@
-interface SubscriptionCTAInterface {
+interface I_SubscriptionCTA {
   label: string;
   disclaimer?: string;
 }
-export default SubscriptionCTAInterface;
+export default I_SubscriptionCTA;

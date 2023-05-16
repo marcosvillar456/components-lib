@@ -1,9 +1,8 @@
-import type { CardBuyLevel6Interface, stylesInlineInterface } from "./types";
-import OfferPrice from "shared/Offer-Price";
-import Image from "shared/Image";
-import Markdown from "utils";
+import type { I_CardBuyLevel6, I_StylesInline } from "./types";
+import OfferPrice from "../../../shared/Offer-Price";
+import Image from "../../../shared/Image";
+import Markdown from "../../../utils";
 import "./styles/_index.scss";
-import { useState } from "react";
 
 const CardBuyLevel6 = ({
   title,
@@ -11,10 +10,9 @@ const CardBuyLevel6 = ({
   offer,
   benefits,
   button,
-}: CardBuyLevel6Interface) => {
-  const [row, setrow] = useState(1);
+}: I_CardBuyLevel6) => {
   const totalBenefits = benefits.length;
-  const containerStyle: stylesInlineInterface = {
+  const containerStyle: I_StylesInline = {
     "--cants-benefits": totalBenefits,
   };
 

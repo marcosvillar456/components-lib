@@ -1,14 +1,14 @@
-import type ImageInterface from "../../../../shared/Image/types";
+import type I_Image from "../../../../shared/Image/types";
 
-interface benefitInterface {
+interface I_benefit {
   title: string;
   subtitle: string;
-  image: ImageInterface;
+  image: I_Image;
 }
 
-interface ShippingBenefitsInterface {
+interface I_ShippingBenefits {
   title: string;
-  benefits: benefitInterface[];
+  benefits: I_benefit[];
 }
 
-export { ShippingBenefitsInterface, benefitInterface };
+export type { I_ShippingBenefits, I_benefit };

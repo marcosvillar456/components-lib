@@ -1,5 +1,5 @@
 import MoreBenefits from "..";
-import type { MoreBenefitsInterface } from "../types";
+import type { I_MoreBenefits } from "../types";
 
 export default {
   title: "MercadoLibre/Nivel 6/More Benefits",

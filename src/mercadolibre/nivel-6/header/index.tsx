@@ -1,7 +1,7 @@
 import OfferPrice from "../../../shared/Offer-Price";
 import Image from "../../../shared/Image";
 import SubscriptionCTA from "../../../shared/subscription-cta";
-import type { HeaderInterface, stylesInlineInterface } from "./types";
+import type { I_Header, I_StylesInline } from "./types";
 import "./styles/_index.scss";
 
 const Header = ({
@@ -10,7 +10,7 @@ const Header = ({
   offer,
   benefits,
   subscription,
-}: HeaderInterface): JSX.Element => {
+}: I_Header): JSX.Element => {
   return (
     <div className="header">
       <div className="header__container">
@@ -24,7 +24,7 @@ const Header = ({
         </div>
         <div className="header__benefits">
           {benefits.map(({ icon, image, title, gradient }): JSX.Element => {
-            const containerStyle: stylesInlineInterface = {
+            const containerStyle: I_StylesInline = {
               "--primary_color": gradient.primary_color,
               "--secondary_color": gradient.secondary_color,
             };

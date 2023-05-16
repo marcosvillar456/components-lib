@@ -7,6 +7,8 @@ export default {
   argTypes: {
     price: {
       control: "object",
+      description:
+        "This is at object which contain the props <b>full_price</b>, <b>cents</b>, <b>text_period</b> and <b>total_price</b> ",
       fields: {
         full_price: { control: "text" },
         cents: { control: "text" },
@@ -21,7 +23,7 @@ export default {
         background_color: { control: "color" },
       },
       description:
-        "Indicates if the offer have a discount.<br/> The prop <b>label</b> is text of pill and the prop color is for defect #008000 but you can send a color",
+        "Indicates if the offer have a discount.<br/> The prop <b>label</b> is text of pill and the prop color is for defect <b>'#008000'</b> but you can send a color",
     },
     separator: {
       control: "boolean",
@@ -44,7 +46,7 @@ export const Default = {
     price: {
       full_price: "$ 17.899",
       cents: "99",
-      text_period: "/mes",
+      text_period: "/month",
       total_price: "$ 50.690",
     },
     discount_pill: {

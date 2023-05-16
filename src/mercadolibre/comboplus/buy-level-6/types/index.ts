@@ -1,23 +1,23 @@
-import type { OfferPriceInterface } from "shared/Offer-Price/types";
-import type ImageInterface from "../../../../shared/Image/types";
+import type { I_OfferPrice } from "../../../../shared/Offer-Price/types"; 
+import type I_Image from "../../../../shared/Image/types";
 
-interface BenefitsInterface {
-  icon: ImageInterface;
+interface I_Benefit {
+  icon: I_Image;
   title: string;
 }
 
-interface CardBuyLevel6Interface {
+interface I_CardBuyLevel6 {
   title: string;
   subtitle: string;
-  offer: OfferPriceInterface;
-  benefits: BenefitsInterface[];
+  offer: I_OfferPrice;
+  benefits: I_Benefit[];
   button: {
     label: string;
   };
 }
 
-interface stylesInlineInterface extends React.CSSProperties {
+interface I_StylesInline extends React.CSSProperties {
   "--cants-benefits": number;
 }
 
-export { CardBuyLevel6Interface, stylesInlineInterface };
+export { I_CardBuyLevel6, I_StylesInline };

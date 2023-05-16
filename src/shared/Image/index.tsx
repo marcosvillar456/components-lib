@@ -1,4 +1,4 @@
-import type ImageInterface from './types';
+import type I_Image from './types';
 
 const Image = ({
   src,
@@ -6,7 +6,7 @@ const Image = ({
   width = 24,
   height = 24,
   className,
-}: ImageInterface) => (
+}: I_Image) => (
   <figure className={className}>
     <img
       src={src}

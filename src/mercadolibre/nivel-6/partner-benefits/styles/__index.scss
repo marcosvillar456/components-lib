@@ -1,5 +1,6 @@
 .partners-benefits {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 0 24px 24px;
 
@@ -8,9 +9,10 @@
     align-items: flex-end;
     border-radius: 6px;
     height: 158px;
-    width: 100%;
-    min-width: 23%;
+    width: 20%;
+    flex-grow: 1;
 
+  
     &__background {
       border-radius: 6px;
       height: 158px;

@@ -1,9 +1,9 @@
-import { PillInterface } from "shared/Pill/types";
+import { I_Pill } from "../../Pill/types"; 
 
-interface CardInterface {
+interface I_Card {
   title: string;
-  pill?: PillInterface;
+  pill?: I_Pill;
   children: React.ReactNode | React.ReactNode[];
 }
 
-export default CardInterface;
+export default I_Card;

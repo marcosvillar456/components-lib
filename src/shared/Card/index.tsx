@@ -1,8 +1,8 @@
-import type CardInterface from "./types";
+import type I_Card from "./types";
 import Pill from "../Pill";
 import "./styles/_card.scss";
 
-const Card = ({ title, pill, children }: CardInterface): JSX.Element => {
+const Card = ({ title, pill, children }: I_Card): JSX.Element => {
   return (
     <div className="card">
       <div className="card__header">

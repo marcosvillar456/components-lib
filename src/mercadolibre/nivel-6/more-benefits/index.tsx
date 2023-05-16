@@ -1,19 +1,19 @@
 import "./styles/__index.scss";
 import Card from "../../../shared/Card";
 import Image from "../../../shared/Image";
-import type { MoreBenefitsInterface, BenefitInterface } from "./types";
+import type { I_MoreBenefits, I_benefit } from "./types";
 
 const MoreBenefits = ({
   title,
   pill,
   benefits,
-}: MoreBenefitsInterface): JSX.Element => {
+}: I_MoreBenefits): JSX.Element => {
   return (
     <Card title={title} pill={pill}>
       <div className="benefits">
         {benefits.map(
-          ({ title, subtitle, img }: BenefitInterface): JSX.Element => (
-            <div key={title} className="benefit">
+          ({ title, subtitle, img }: I_benefit): JSX.Element => (
+            <div  className="benefit" key={title}>
               <Image
                 src={img.src}
                 alt={img.alt}

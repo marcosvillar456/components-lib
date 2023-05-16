@@ -1,15 +1,15 @@
 import "./styles/_index.scss";
 import Image from "../Image";
 import classNames from "classnames";
-import type { PillInterface, stylesInlineInterface } from "./types";
+import type { I_Pill, I_StylesInline } from "./types";
 
 const Pill = ({
   icon,
   text: { label, color = "#FFF" },
   background,
   card = false,
-}: PillInterface): JSX.Element => {
-  const containerStyle: stylesInlineInterface = {
+}: I_Pill): JSX.Element => {
+  const containerStyle: I_StylesInline = {
     "--background-pill": background,
     "--text-color-pill": color,
   };

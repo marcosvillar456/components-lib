@@ -1,19 +1,18 @@
-import type ImageInterface from "../../../../shared/Image/types";
+import type I_Image from "../../../../shared/Image/types";
 
-interface partnerInterface {
+interface I_partner {
   offer: {
     label: string;
     discount: string;
   };
   title: string;
-  logo: ImageInterface;
+  logo: I_Image;
   image_background: string;
-  index: number;
 }
 
-interface PartnerBenefitsInterface {
+interface I_PartnerBenefits {
   title: string;
-  partners: partnerInterface[];
+  partners: I_partner[];
 }
 
-export { PartnerBenefitsInterface, partnerInterface };
+export type { I_PartnerBenefits, I_partner };

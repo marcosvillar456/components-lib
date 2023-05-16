@@ -1,4 +1,4 @@
-export interface OfferPriceInterface {
+export interface I_OfferPrice {
   price: {
     total_price: string;
     cents?: string;

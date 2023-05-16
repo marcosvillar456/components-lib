@@ -21,18 +21,25 @@ export default {
         alt: { control: "text" },
         separator: { control: "boolean" },
       },
+      description:
+        "The prop icon is composed of <b>src</b> and <b>alt</b>, which are strings, and <b>separator</b>, which is a boolean.",
     },
     background: {
       control: { type: "color" },
+      description:
+        "The prop background does reference to the background color of the pill ",
     },
-    card: { control: "boolean" },
+    card: {
+      control: "boolean",
+      description: "If card is true, the text is bigger",
+    },
   },
 };
 
 export const Default = {
   args: {
     text: {
-      label: "Soy una Pill",
+      label: "I am a Pill",
       color: "black",
     },
     icon: {
